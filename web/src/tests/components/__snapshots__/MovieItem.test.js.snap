@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieItem Component should render MovieItem 1`] = `
+<article
+  className="movie-item"
+>
+  <div
+    className="movie-item__img"
+  >
+    <picture>
+      <source
+        media="(min-width: 768px)"
+      />
+      <img />
+    </picture>
+  </div>
+  <div
+    className="movie-item__wrapper"
+  >
+    <h1
+      className="movie-item__title"
+    />
+    <div
+      className="movie-item__showtimes"
+    >
+      <h3>
+        Show Times:
+      </h3>
+    </div>
+    <button
+      className="btn btn-primary"
+    >
+      See more
+    </button>
+  </div>
+</article>
+`;
+
+exports[`should render MovieItem 1`] = `
+<article
+  className="movie-item"
+>
+  <div
+    className="movie-item__img"
+  >
+    <picture>
+      <source
+        media="(min-width: 768px)"
+      />
+      <img />
+    </picture>
+  </div>
+  <div
+    className="movie-item__wrapper"
+  >
+    <h1
+      className="movie-item__title"
+    />
+    <div
+      className="movie-item__showtimes"
+    >
+      <h3>
+        Show Times:
+      </h3>
+    </div>
+    <button
+      className="btn btn-primary"
+    >
+      See more
+    </button>
+  </div>
+</article>
+`;

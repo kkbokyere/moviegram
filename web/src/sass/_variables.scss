@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,500,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* ==========================================================================
+Site Settings
+========================================================================== */
+$radius         : 5px;
+$default-spacing: 10px;
+$paddingContent : 50px;
+$gridContainer: 1230px;
+$default-padding: 20px;
+$header-height: 60px;
+
+$article-header-padding: 50px 0;
+$article-header-padding-tablet: 300px 0;
+$article-content-padding: 60px 0;
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+$breakpoint-phone: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+/* ==========================================================================
+Fonts - Imported from base/fonts.scss
+========================================================================== */
+$font-alegreya: 'Alegreya', serif;
+$font-body: $font-alegreya;
+
+$font-body-weight-regular: 400;
+$font-body-weight-medium: 500;
+$font-body-weight-bold: 700;
+
+$font-size-h1: 50px;
+$font-size-h2: 22px;
+$font-size-h3: 18px;
+$font-size-h4: 16px;
+$font-size-h5: 14px;
+$font-size-h6: 13px;
+
+$font-size-body-large: 20px;
+$font-size-body-regular: 18px;
+$font-size-body-small: 13px;
+$font-size-body-smaller: 12px;
+$font-size-body-xtra-small: 10px;
+
+$font-line-height-regular: 28px;
+$font-line-height-small: 20px;
+$font-line-height-smaller: 16px;
+
+$default-letter-spacing: 0.5px;
+
+
+/* ==========================================================================
+Colors
+========================================================================== */
+$primary-black: #20232a;
+$primary-green: green;
+$white: #fff;
+$primary-grey: #bbb;

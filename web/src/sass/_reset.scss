@@ -1,0 +1,29 @@
+/* ==========================================================================
+Reset style
+========================================================================== */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  font-weight: $font-body-weight-regular;
+
+  //overflow-y: hidden;
+}
+
+body {
+  background: transparent;
+}
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+li {
+  list-style: none;
+}
