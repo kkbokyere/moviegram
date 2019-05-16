@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieItem from '../MovieItem';
 
 const MovieList = ({data}) => {
@@ -7,6 +8,10 @@ const MovieList = ({data}) => {
             {data.map((movieData) => <MovieItem key={movieData.id} {...movieData}/>)}
         </section>
     );
+};
+
+MovieList.propTypes = {
+    data: PropTypes.array.isRequired
 };
 
 export default MovieList;
