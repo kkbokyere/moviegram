@@ -5,9 +5,19 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: $font-body-weight-regular;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-body-weight-bold;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-weight: $font-body-weight-bold;
+}
+
+h3 {
+  font-size: $font-size-h3;
 }

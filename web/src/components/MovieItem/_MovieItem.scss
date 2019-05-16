@@ -1,0 +1,23 @@
+.movie-item {
+  border-bottom: 1px solid $primary-grey;
+  display: flex;
+  margin-bottom: $default-padding;
+  padding: $default-padding 0;
+}
+
+.movie-item__title {
+}
+
+.movie-item__img {
+  margin-right: $default-padding;
+}
+
+.movie-item__showtimes {
+
+  margin-bottom: $default-padding;
+}
+
+.movie-item__time {
+  display: block;
+  margin-bottom: 10px;
+}

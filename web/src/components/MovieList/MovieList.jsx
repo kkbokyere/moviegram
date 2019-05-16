@@ -1,13 +1,11 @@
 import React from 'react';
 import MovieItem from '../MovieItem';
 
-const MovieList = ({ data }) => {
+const MovieList = ({data}) => {
     return (
-        <ul>
-            <li>
-                {/*<MovieItem title="" description="" img="" url="" />*/}
-            </li>
-        </ul>
+        <section className="movie-list">
+            {data.map((movieData) => <MovieItem key={movieData.id} {...movieData}/>)}
+        </section>
     );
 };
 
