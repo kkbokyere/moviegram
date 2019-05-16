@@ -1,5 +1,5 @@
 import React from 'react';
-import MovieList from './components/MovieList';
+import MovieListContainer from './containers/MovieListContainer';
 import './App.css';
 
 function App() {
@@ -9,8 +9,13 @@ function App() {
         <input placeholder="search"/>
       </header>
 
-      <MovieList />
-
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12">
+                    <MovieListContainer />
+                </div>
+            </div>
+        </div>
     </div>
   );
 }
