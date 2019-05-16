@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link} from 'react-router-dom';
+import {ROUTES} from "../../constants/constants";
 
 const MovieItem = ({ img, imgWide, title, showTimes = [], id }) => {
     return (
@@ -16,7 +18,7 @@ const MovieItem = ({ img, imgWide, title, showTimes = [], id }) => {
                     <h3>Show Times:</h3>
                     {showTimes.map(({time, cinema}, index) => <span className="movie-item__time" key={index}>{time} @ {cinema}</span>)}
                 </div>
-                <button className="btn btn-primary">See more</button>
+                <Link to={`${ROUTES.details}/${id}`} className="btn btn-primary">See more</Link>
             </div>
         </article>
     );

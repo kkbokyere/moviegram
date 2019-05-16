@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Homepage from './pages/Homepage';
 import Details from './pages/Details';
 import './App.css';
+import {ROUTES} from "./constants/constants";
 
 function App() {
   return (
       <Router>
+
         <div className="moviegram">
           <header className="header">
             <input placeholder="search"/>
@@ -16,8 +18,10 @@ function App() {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12">
-                        <Route exact path="/" component={Homepage} />
-                        <Route exact path="/details/:id" component={Details} />
+                        <Switch>
+                            <Route exact path={ROUTES.homepage} component={Homepage} />
+                            <Route path={`${ROUTES.details}/:id`} component={Details} />
+                        </Switch>
                     </div>
                 </div>
             </div>
