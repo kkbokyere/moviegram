@@ -1,8 +1,12 @@
 @import "sass/variables";
 @import "sass/reset";
+
+@import "sass/typography";
 @import "sass/layout";
+@import "sass/breakpoints";
 
 @import "sass/header";
+
 @import "components/MovieItem/MovieItem";
 @import "components/MovieList/MovieList";
 

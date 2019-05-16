@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieItem = ({ img, title, showTimes = [], id }) => {
+const MovieItem = ({ img, imgWide, title, showTimes = [], id }) => {
     return (
         <article className="movie-item">
-            <div>
-            <img className="movie-item__img" src={img} alt={title}/>
+            <div className="movie-item__img">
+                <picture>
+                    <source media="(min-width: 768px)" srcSet={img}/>
+                    <img src={imgWide} alt={title}/>
+                </picture>
             </div>
             <div className="movie-item__wrapper">
                 <h1 className="movie-item__title">{title}</h1>
@@ -21,6 +24,7 @@ const MovieItem = ({ img, title, showTimes = [], id }) => {
 
 MovieItem.propTypes = {
     img: PropTypes.string,
+    imgWide: PropTypes.string,
     title: PropTypes.string,
     showTimes: PropTypes.array,
     id: PropTypes.string,

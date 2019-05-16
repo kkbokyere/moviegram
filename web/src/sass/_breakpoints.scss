@@ -1,0 +1,97 @@
+
+/*
+* Media Queries and Breakpoints
+*/
+
+/* doc
+ ---
+ title: Large Desktop Media Query
+ name: large_desktop
+ category: media queries
+ ---
+
+Media query for large desktop devices (over 1440px)
+
+ ```html_example
+  @include large_desktop {
+    div {
+      display: none;
+    }
+  }
+ ```
+ */
+@mixin large_desktop {
+  @media only screen and (min-width:  + 1) {
+    @content;
+  }
+}
+
+
+/* doc
+ ---
+ title: Desktop Media Query
+ name: desktop
+ category: media queries
+ ---
+
+Media query for desktop devices (over 768px)
+
+ ```html_example
+  @include desktop {
+    div {
+      display: none;
+    }
+  }
+ ```
+ */
+@mixin desktop {
+  @media only screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+/* doc
+ ---
+ title: Medium Screen Media Query
+ name: medium
+ category: media queries
+ ---
+
+Media query for medium devices (over 401px)
+
+ ```html_example
+  @include medium {
+    div {
+      display: none;
+    }
+  }
+ ```
+ */
+@mixin medium {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+/* doc
+ ---
+ title: Small Screen Media Query
+ name: small
+ category: media queries
+ ---
+
+Small devices (tablets, 768px and up)
+
+ ```html_example
+  @include small {
+    div {
+      display: none;
+    }
+  }
+ ```
+ */
+@mixin small {
+  @media only screen and (min-width: $breakpoint-phone) {
+    @content;
+  }
+}
