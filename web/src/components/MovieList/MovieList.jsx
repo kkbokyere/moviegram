@@ -5,7 +5,7 @@ import MovieItem from '../MovieItem';
 const MovieList = ({data}) => {
     return (
         <section className="movie-list">
-            {data.map((movieData) => <MovieItem key={movieData.id} {...movieData}/>)}
+            {data.map((movieData, index) => <MovieItem key={index} {...movieData}/>)}
         </section>
     );
 };
