@@ -74,9 +74,3 @@ export const filterMoviesByTitle = (movieTitle) => {
         dispatch(fetchMoviesSuccess(filteredMovies));
     }
 };
-
-
-
-
-
-export default { getAllMovies, getMovieById }
