@@ -118,6 +118,11 @@ Small devices (tablets, 768px and up)
   }
  ```
  */
+.header {
+  background-color: #20232a;
+  color: #fff;
+  margin-bottom: 50px; }
+
 .movie-item {
   border-bottom: 1px solid #bbb;
   display: flex;

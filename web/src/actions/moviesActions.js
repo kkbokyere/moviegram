@@ -61,4 +61,22 @@ export const getMovieById = (id) => {
     }
 };
 
+/**
+ * Filter Movies by title.
+ * @returns {function(*)}
+ */
+export const filterMoviesByTitle = (movieTitle) => {
+    return (dispatch) => {
+        const filteredMovies = moviesData.filter(({title}) => {
+            const isMatch = (title.toLowerCase().includes(movieTitle.toLowerCase()));
+            return (isMatch)
+        });
+        dispatch(fetchMoviesSuccess(filteredMovies));
+    }
+};
+
+
+
+
+
 export default { getAllMovies, getMovieById }
