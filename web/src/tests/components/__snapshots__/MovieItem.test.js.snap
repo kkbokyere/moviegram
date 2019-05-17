@@ -27,47 +27,13 @@ exports[`MovieItem Component should render MovieItem 1`] = `
         Show Times:
       </h3>
     </div>
-    <button
+    <a
       className="btn btn-primary"
+      href="/details/undefined"
+      onClick={[Function]}
     >
       See more
-    </button>
-  </div>
-</article>
-`;
-
-exports[`should render MovieItem 1`] = `
-<article
-  className="movie-item"
->
-  <div
-    className="movie-item__img"
-  >
-    <picture>
-      <source
-        media="(min-width: 768px)"
-      />
-      <img />
-    </picture>
-  </div>
-  <div
-    className="movie-item__wrapper"
-  >
-    <h1
-      className="movie-item__title"
-    />
-    <div
-      className="movie-item__showtimes"
-    >
-      <h3>
-        Show Times:
-      </h3>
-    </div>
-    <button
-      className="btn btn-primary"
-    >
-      See more
-    </button>
+    </a>
   </div>
 </article>
 `;

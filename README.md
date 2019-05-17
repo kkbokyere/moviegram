@@ -67,4 +67,10 @@ I created some async actions, that don't really call any end points. They just r
 
 ### Testing
 
-I would have created more tests for ALL components along with the reducers and actions.
+- I would have created more tests for ALL components along with the reducers and actions.
+- I didn't get much chance to do any cross browser testing. Would have used something like browser stack to test full functionality.
+
+
+### Linting
+
+I didn't get a chance to set up a proper linting profile, to catch any code errors

@@ -6,7 +6,7 @@ import {
 } from '../actions/actionTypes'
 
 
-const initialState = {
+export const initialState = {
     data: [],
     selected: {},
     loading: false,
