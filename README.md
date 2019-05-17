@@ -64,3 +64,7 @@ I would have used High Order Components in a more efficient way. I would have ke
 ### Async Actions
 
 I created some async actions, that don't really call any end points. They just return the movies.json. Yes, technically this is overkill, but as part of this test, just to prove how i would have implemented a real API endpoint with the application, I just created these. Ideally, I would have used fetch or axios to make the request, then passed the response to the synchronus actions.
+
+### Testing
+
+I would have created more tests for ALL components along with the reducers and actions.
