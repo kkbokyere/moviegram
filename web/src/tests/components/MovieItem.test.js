@@ -1,12 +1,14 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
+import { MemoryRouter } from 'react-router'
 
 import MovieItem from '../../components/MovieItem';
 
 describe('MovieItem Component', () => {
+    let wrapper;
     it('should render MovieItem', () => {
-        const wrapper = renderer.create(<MovieItem />).toJSON();
+        const wrapper = renderer.create(<MemoryRouter><MovieItem /></MemoryRouter>).toJSON();
 
         expect(wrapper).toMatchSnapshot()
     });
@@ -24,7 +26,7 @@ describe('MovieItem Component', () => {
             "imgWide": "https://via.placeholder.com/400x300"
         };
 
-        const movieItemComponent = mount(<MovieItem {...movieItemData} />);
+        const movieItemComponent = mount(<MemoryRouter><MovieItem {...movieItemData} /></MemoryRouter>);
 
         expect(movieItemComponent.find('.movie-item__title').text()).toEqual(movieItemData.title)
     });
