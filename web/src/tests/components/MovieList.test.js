@@ -7,11 +7,11 @@ import MovieList from '../../components/MovieList';
 import MovieItem from "../../components/MovieItem";
 
 describe('MovieList Component', () => {
-    // it('should render MovieList', () => {
-    //     const wrapper = renderer.create(<MovieList data={[{}]} />).toJSON();
-    //
-    //     expect(wrapper).toMatchSnapshot()
-    // });
+    it('should render MovieList', () => {
+        const wrapper = renderer.create(<MemoryRouter><MovieList data={[{}]} /></MemoryRouter>).toJSON();
+
+        expect(wrapper).toMatchSnapshot()
+    });
 
     it('should render MovieList with movie Items', () => {
         const moviesArray = [{
