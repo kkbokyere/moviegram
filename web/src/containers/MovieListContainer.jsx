@@ -1,22 +1,39 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import MovieList from "../components/MovieList";
-import moviesData from "../constants/movies.json";
+import {connect} from 'react-redux';
+import {getAllMovies} from "../actions/moviesActions";
 
 class MovieListContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            moviesData: moviesData
-        };
+    }
+    componentWillMount() {
+        if(!this.props.movies.length) {
+            this.props.getAllMovies();
+        }
     }
     render() {
-        return(<MovieList data={this.state.moviesData}/>)
+        return(<MovieList data={this.props.movies}/>)
     }
 }
 
-MovieListContainer.propTypes = {
-    moviesData: PropTypes.array,
+const mapStateToProps = (state) => {
+    return {
+        movies: state.movies.data
+    }
 };
 
-export default MovieListContainer;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getAllMovies: () => dispatch(getAllMovies()),
+    }
+};
+
+
+MovieListContainer.propTypes = {
+    movies: PropTypes.array,
+    getAllMovies: PropTypes.func,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MovieListContainer);
