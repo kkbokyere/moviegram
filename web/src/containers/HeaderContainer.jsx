@@ -11,11 +11,13 @@ class HeaderContainer extends Component {
     constructor(props) {
         super(props);
     }
-    render() {
+    isHomepage = () => {
         const { location } = this.props;
-        const isHomepage = (location.pathname === ROUTES.homepage);
+        return (location.pathname === ROUTES.homepage);
+    };
+    render() {
         return(
-            <Header showSearch={isHomepage}/>
+            <Header showSearch={this.isHomepage()}/>
         )
     }
 }
